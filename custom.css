@@ -1,19 +1,29 @@
-.dark-blue{
-    background-color: darkblue;
-    color: #ffffff;
-}
-
-.nav-custom{
-    background-color: #03034e;
-    color: #ffffff;
-}
-.nav-custom a{
-    
-    color: #ffffff;
-}
-
 
 .hobbies-img{
     height: 450px;
     
+}
+.jumbotron{
+    background-color: darkblue;
+    padding: 1rem 2rem 4rem;
+}
+
+#header {
+    background-color: darkblue;
+    color: #ffffff;
+}
+#header a{
+    color: #ffffff;
+}
+#header .dropdown-menu a:hover{
+    color: #000000;
+}
+
+.nav-custom{
+    background-color: #03034e;
+   
+}
+
+.nav-custom .dropdown-item a:hover{
+    color: black;
 }

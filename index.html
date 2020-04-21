@@ -10,65 +10,82 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg nav-custom"  >
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Container</a> -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="collapse navbar-collapse" id="navbarsExample07">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IGCSE CS</a>
-                <div class="dropdown-menu nav-custom" aria-labelledby="dropdown07">
-                  <a class="dropdown-item" href="igcse-cs.html">About IGCSE</a>
-                  <a class="dropdown-item" href="igcse/dataRep.html">Data Representation</a>
-                  <a class="dropdown-item" href="igcse/hwandsw.html">Hardware & Software</a>
-                  <a class="dropdown-item" href="igcse/security.html">Security</a>
-                  <a class="dropdown-item" href="igcse/ethics.html">Ethics</a>
-                  <a class="dropdown-item" href="igcse/algorithms.html">Algorithms and Problem Solving</a>
-                  <a class="dropdown-item" href="igcse/programming.html">Programming</a>
-                  <a class="dropdown-item" href="igcse/databases.html">Databases</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <div class="jumbotron dark-blue">
-        <div class="container-fluid">
-        <img src="images/MrF_circle_200px.png" class="float-left"><h1 class="display-2">Comp.Sci. with Mr.F!</h1>
-
-        <div class="row">
-            <div class="col">
+    <div id="header">
+            <nav class="navbar navbar-expand-lg" >
+                <!-- <a class="navbar-brand" href="#">Container</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample07">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IGCSE CS</a>
+                        <div class="dropdown-menu nav-custom" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="igcse-cs.html">About IGCSE</a>
+                            <a class="dropdown-item" href="igcse/dataRep.html">Data Representation</a>
+                            <a class="dropdown-item" href="igcse/hwandsw.html">Hardware & Software</a>
+                            <a class="dropdown-item" href="igcse/commstech.html">Comms & Internet Tech</a>
+                            <a class="dropdown-item" href="igcse/security.html">Security</a>
+                            <a class="dropdown-item" href="igcse/ethics.html">Ethics</a>
+                            <a class="dropdown-item" href="igcse/algorithms.html">Algorithms and Problem Solving</a>
+                            <a class="dropdown-item" href="igcse/programming.html">Programming</a>
+                            <a class="dropdown-item" href="igcse/databases.html">Databases</a>
+                        </div>
+                    </li>
+                    </ul>
                 
-                <p class="lead">Hi, I'm Mr. F, I teach computer science at secondary/high school. I like to 'tinker' and try to make things. </p>
+                </div>
+            </nav>
+
+        <div class="jumbotron">
+            <div class="container-fluid text-center">
+                <img src="images/MrF_circle_200px.png"  alt="..." class="float-left">
+                <h1 class="display-2">Comp.Sci. with Mr.F!</h1>
+            
+            <div class="row">
+                <div class="col">
+                    
+                    <p class="lead">Hi, I'm Mr. F, I teach computer science at secondary/high school. I like to 'tinker' and try to make things. </p>
+                </div>
             </div>
-          </div>
-          </div>
+            </div>
+        </div>
     </div>
     <!-- Main content -->
     <div class="container-xl">
         <div class="row">
             <div class="col-md-4">
-              <h2>About</h2>
-              <p>Info about me and this site</p>
-              <p><a class="btn btn-secondary" href="about.html" role="button">More &raquo;</a></p>
+
+                <div class="card text-center" style="width: 14rem;">
+                    
+                    <div class="card-body">
+                      <h5 class="card-title">About </h5>
+                      <p class="card-text">Info about me and this site.</p>
+                      <a href="about.html" class="btn btn-primary" role="button">>></a>
+                    </div>
+                </div>
             </div>  
             <div class="col-md-4">
-              <h2>IGCSE CS</h2>
-              <p>More about IGCSE Computer Science</p>
-              <p><a class="btn btn-secondary" href="igcse-cs.html" role="button">More &raquo;</a></p>
+                <div class="card text-center" style="width: 14rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">IGCSE CS </h5>
+                      <p class="card-text">More about IGCSE Computer Science.</p>
+                      <a href="igcse-cs.html" class="btn btn-primary" role="button">>></a>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
-              <h2>T&L</h2>
-              <p>Teaching and learning "stuff"</p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+                <div class="card text-center" style="width: 14rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">T&L </h5>
+                      <p class="card-text">Teaching and learning "stuff"</p>
+                      <a href="#" class="btn btn-primary" role="button">>></a>
+                    </div>
+                </div>
+     
             </div>
           </div>
     </div>
