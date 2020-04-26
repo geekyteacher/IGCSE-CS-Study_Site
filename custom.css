@@ -5,14 +5,15 @@
 }
 .jumbotron{
     background-color: darkblue;
+    color: #ffffff;
     padding: 1rem 2rem 4rem;
 }
 
-#header {
+/* #header {
     background-color: darkblue;
     color: #ffffff;
-}
-#header a{
+} */
+#header .dropdown-menu a{
     color: #ffffff;
 }
 #header .dropdown-menu a:hover{
