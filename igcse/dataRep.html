@@ -42,52 +42,263 @@
 
     <!-- Main content -->
     <div class="container-xl">
-        <p>We are familiar with numbers and will regularly use the denary number system. You may not know this name but this is another name for the number system that we use for 
-            counting in our everyday lives. It has ten numerals: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. Because it has ten numerals we call it base-10. When writing larger numbers 
-            needing more than one numeral each numeral is worth ten times the numeral to its right. In computing we also use the hexadecimal and binary number systems.</p>
-    
-        <h2>Binary</h2>
-        <p>In binary we have only two digits 0 and 1 so we call this base-2. Computers at their most basic level are simply a collection switches which can be either on 
-            (represented by the digit 1) and off (represented by the digit 0). All data that goes into a computer is converted to binary, whether this is text, images, video or audio.  
-            For Humans to be able to work with computers we need ways of representing all of the data we use in binary. Everything you see on your computer screen can be converted </p>
-        <p>In the denary system when we need larger numbers we add an extra digit to the left. This digit is woth 10 times the value of that to the right, we count units, tens, hundreds,
-            thousands...and so on</p>
-        <table class="table">
-            <thead class="thead-light">
-                <tr>
-                    <th>1000s</th>
-                    <th>100s</th>
-                    <th>10s</th>
-                    <th>1s</th>
-                </tr>
-            </thead>
+            <div class="accordion" id="dataRepAccordian">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h2>Data Representation</h2>
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#dataRepAccordian">
+                    <div class="card-body">
+                        <p>We are familiar with numbers and will regularly use the denary number system. You may not know this name but this is another name for the number system that we use for 
+                            counting in our everyday lives. It has ten numerals: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. Because it has ten numerals we call it base-10. When writing larger numbers 
+                            needing more than one numeral each numeral is worth ten times the numeral to its right. In computing we also use the hexadecimal and binary number systems.</p>
+                            <p>In the denary system when we need larger numbers we add an extra digit to the left. This digit is woth 10 times the value of that to the right, we count units, tens, hundreds,
+                                thousands...and so on.</p>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th>1000s</th>
+                                            <th>100s</th>
+                                            <th>10s</th>
+                                            <th>1s</th>
+                                        </tr>
+                                    </thead>
+                        
+                                    <tr>
+                                        <td>10<sup>3</sup></td>
+                                        <td>10<sup>2</sup></td>
+                                        <td>10<sup>1</sup></td>
+                                        <td>10<sup>0</sup></td>
+                                    </tr>
+                                </table>
+                            
+                                The number <em>two thousand and forty six</em> (2046) would be as follows
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>1000s</th>
+                                        <th>100s</th>
+                                        <th>10s</th>
+                                        <th>1s</th>
+                                    </tr>
+                                </thead>
+                    
+                                <tr>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>6</td>
+                                </tr>
+                            </table>
+                            2 thousands，4 tens and 6 units 
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h2>Binary</h2>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#dataRepAccordian">
+                    <div class="card-body">
+                        <p>In binary we have only two digits 0 and 1 so we call this base-2. Computers at their most basic level are simply a collection switches which can be either on 
+                            (represented by the digit 1) and off (represented by the digit 0). All data that goes into a computer is converted to binary, whether this is text, images, video or audio.  
+                            For Humans to be able to work with computers we need ways of representing all of the data we use in binary. Everything you see on your computer screen can be converted </p>
+                        
+                        <p>In binary there are only two digits. we can count 0...1...and then stuck! How do we count 2? How do we count more? Like in denary we add digits to the left. Each digit is 
+                            worth double that of the previous position. The first digit is the unit, 0 or 1. The next digit will be worth 2, a third digit 4...and so on.</p>
 
-            <tr>
-                <td>2</td>
-                <td>0</td>
-                <td>3</td>
-                <td>6</td>
-            </tr>
-        </table>
-        <p>In binary there are only two digits. we can count 0...1...and then stuck! How do we count 2? How do we count more? Like in denary we add digits to the left. Each digit is 
-            worth double that of the previous position. The first digit is the unit, 0 or 1. The next digit will be worth 2, a third digit 4...and so on.</p>
-            <table class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th>8s</th>
-                        <th>4s</th>
-                        <th>2s</th>
-                        <th>1s'</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                    <td>0</td>
-                </tr>
-            </table>
-        <p>In this example there is an 8, no 4s, a 2 and no 1s. To get the denary total we add up the values of each digit position, 8+2 = 10</p>
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>8s</th>
+                                        <th>4s</th>
+                                        <th>2s</th>
+                                        <th>1s'</th>
+                                    </tr>
+                                </thead>
+                    
+                                <tr>
+                                    <td>2<sup>3</sup></td>
+                                    <td>2<sup>2</sup></td>
+                                    <td>2<sup>1</sup></td>
+                                    <td>2<sup>0</sup></td>
+                                </tr>
+                            </table>
+
+
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>8s</th>
+                                        <th>4s</th>
+                                        <th>2s</th>
+                                        <th>1s'</th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </table>
+                        <p>In this example there is an 8, no 4s, a 2 and no 1s. To get the denary total we add up the values of each digit position, 8+2 = 10</p>                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h2>Hexadecimal</h2>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#dataRepAccordian">
+                    <div class="card-body">
+                        <p>Hexadecimal, or <strong><em>hex</em></strong>, is another number system. It is a close relation to binary however <strong>hex</strong> is a base 16 system.
+                        Remeber binary is base 2 and has two digits that are represented by 2 values, 0 and 1, <strong>hex</strong> being base 16 has 16 digits. 
+                        In our regular system of denary which is base 10, we have 10 digits that are represented by the values 0 to 9. So how do we represent these remaining values in <strong>hex</strong>?
+                        </p>
+                        <p><strong>Hex</strong> still uses the digits 0 to 9 but this is only 10 values, so where do we get the next 6? Each digit is a single value so we don't go to 10, 11, etc.
+                            In <strong>hex</strong> we use the letters A to F to represent the missing values. So along with 0 to 9, you will use A to F to cover 10 to 15 (A=10, B=11, C=12, D=13, E=14, F=15)
+                        </p>
+                        <p>
+                            As with binary and denary we would use similar style value headings
+                        </p>
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>4096s</th>
+                                    <th>256s</th>
+                                    <th>16s</th>
+                                    <th>1s'</th>
+                                </tr>
+                            </thead>
+                
+                            <tr>
+                                <td>16<sup>3</sup></td>
+                                <td>16<sup>2</sup></td>
+                                <td>16<sup>1</sup></td>
+                                <td>16<sup>0</sup></td>
+                            </tr>
+                        </table>
+                        <p>Since 16 = 2<sup>4</sup> this means that FOUR binary digits are equivalent to each hexadecimal digit. </p>
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Binary Value</th>
+                                    <th>Hexadecimal Value</th>
+                                    <th>Denary Value</th>
+                                </tr>
+                            <tr>
+                                <td>0 0 0 0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>0 0 0 1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>0 0 1 0</td>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>0 0 1 1</td>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>0 1 0 0</td>
+                                <td>4</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>0 1 0 1</td>
+                                <td>5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>0 1 1 0</td>
+                                <td>6</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>0 1 1 1</td>
+                                <td>7</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>1 0 0 0 </td>
+                                <td>8</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>1 0 0 1</td>
+                                <td>9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>1 0 1 0</td>
+                                <td>A</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>1 0 1 1</td>
+                                <td>B</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>1 1 0 0</td>
+                                <td>C</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>1 1 0 1</td>
+                                <td>D</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>1 1 1 0</td>
+                                <td>E</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>1 1 1 1</td>
+                                <td>F</td>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Data...
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#dataRepAccordian">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+              </div> -->
+
     </div>
 
 
